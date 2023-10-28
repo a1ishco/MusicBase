@@ -1,0 +1,341 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+body {
+  background: rgb(216, 171, 246);
+  background: linear-gradient(90deg, rgb(216, 171, 246) 0%, rgb(255, 170, 170) 50%, rgb(255, 202, 127) 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background: transparent;
+}
+.navbar .nav-item .dropdown-menu a:hover {
+  color: black;
+}
+.navbar .nav-1:hover {
+  font-weight: bold;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.navbar .dropdown-toggle::after {
+  content: none;
+}
+.navbar .logoNavbar {
+  pointer-events: none;
+  background: -webkit-linear-gradient(#ff00dd, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.navbar .dropdown-item,
+.navbar .dropdown-menu {
+  z-index: 9998;
+}
+.navbar .dropdown-item :hover,
+.navbar .dropdown-menu :hover {
+  background-color: #f2abc5;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 170, 170, 0.9) !important;
+  z-index: 9999;
+  transition: 0.2s;
+}
+.sticky * {
+  color: #000;
+}
+
+.sticky + section {
+  padding-top: 50px;
+}
+
+footer {
+  background: rgb(216, 171, 246);
+  background: linear-gradient(90deg, rgb(216, 171, 246) 0%, rgb(255, 170, 170) 50%, rgb(255, 202, 127) 100%);
+}
+footer .rightPanel {
+  justify-content: center;
+}
+footer .rightPanel .dark-light,
+footer .rightPanel .socFb,
+footer .rightPanel .socIns,
+footer .rightPanel .socTw,
+footer .rightPanel .socYou {
+  margin-inline: 3px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  color: white;
+}
+footer .rightPanel .socFb {
+  background-color: #285AEB;
+}
+footer .rightPanel .socTw {
+  background-color: #285AEB;
+}
+footer .rightPanel .socTw svg {
+  fill: white;
+}
+footer .rightPanel .socIns {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+}
+footer .rightPanel .socYou {
+  background-color: red;
+}
+
+.aboutPage .logoText {
+  width: 100%;
+  pointer-events: none;
+  background: -webkit-linear-gradient(#ff00dd, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 50px;
+  animation: logoAnim 3s infinite;
+}
+@keyframes logoAnim {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.aboutPage .devText,
+.aboutPage .abouText {
+  pointer-events: none;
+}
+.aboutPage .devPic {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+.aboutPage img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (min-width: 768px) {
+  .aboutPage .logoText {
+    font-size: 110px;
+  }
+}
+
+.ErrPage {
+  pointer-events: none;
+}
+.ErrPage .Err1 {
+  background: -webkit-linear-gradient(#ff00dd, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 110px;
+}
+
+.contactPage .section-title-contact {
+  pointer-events: none;
+}
+.contactPage .contTxt p {
+  pointer-events: none;
+}
+.contactPage .contTxt a {
+  color: #012288;
+  text-decoration: none;
+  pointer-events: visible;
+}
+.contactPage .formCont {
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contactPage .formCont .sendBtn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contactPage .formCont .sendBtn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.homePage .carousel-inner {
+  overflow: 5hidden;
+  height: 300px;
+}
+.homePage .carousel-inner img {
+  border-radius: 15px;
+  height: 290px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.homePage .carousel-caption h5 {
+  font-size: 500px;
+}
+.homePage .logoSide {
+  background-image: url("../assets/equaliz.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+}
+.homePage .logoHome {
+  padding-top: 100px;
+  pointer-events: none;
+  background: -webkit-linear-gradient(#ff00dd, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 50px;
+  animation: logoHomeAnin 3s linear;
+  text-shadow: 10px 10px 0px #ffffff;
+}
+@keyframes logoHomeAnin {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .homePage .logoHome {
+    font-size: 130px;
+  }
+  .homePage .logoSide {
+    height: 350px;
+  }
+}
+.homePage .cardjumbo .card {
+  border: none;
+  width: 100%;
+}
+.homePage .cardjumbo .cards-images {
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .homePage .cardjumbo .cards-images {
+    max-width: auto;
+  }
+}
+.homePage .cardjumbo .card:hover .card-title {
+  font-weight: bold;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.homePage .cardjumbo .card:hover .cards-images {
+  transform: translate(-20px, -30px) rotate(-15deg) scale(1.05);
+}
+
+.faqPage {
+  pointer-events: none;
+}
+.faqPage ul,
+.faqPage li {
+  list-style: none;
+}
+.faqPage ul b,
+.faqPage li b {
+  color: #333;
+}
+.faqPage .logoFaq {
+  pointer-events: none;
+  background: -webkit-linear-gradient(#ff00dd, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-size: 90px;
+}
+.faqPage .faqList {
+  font-size: 25px;
+}
+
+.loaderPage .boxes {
+  margin-top: 150px;
+}
+.loaderPage .box1,
+.loaderPage .box2,
+.loaderPage .box3,
+.loaderPage .box4,
+.loaderPage .box5 {
+  background-color: black;
+  width: 30px;
+  height: 150px;
+  border-radius: 20px;
+  animation: loader 3s linear infinite;
+}
+.loaderPage .box1 {
+  height: 100px;
+  transform: translateY(90px);
+  animation-delay: -1s;
+}
+.loaderPage .box2 {
+  height: 220px;
+  transform: translateY(30px);
+  animation-delay: -0.8s;
+}
+.loaderPage .box3 {
+  height: 140px;
+  transform: translateY(70px);
+  animation-delay: -0.6s;
+}
+.loaderPage .box4 {
+  height: 170px;
+  transform: translateY(55px);
+  animation-delay: -0.4s;
+}
+.loaderPage .box5 {
+  height: 120px;
+  transform: translateY(80px);
+  animation-delay: 0s;
+}
+@keyframes loader {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.musicPage .spotifyBtn {
+  background: rgb(216, 171, 246);
+  background: linear-gradient(90deg, rgb(216, 171, 246) 0%, rgb(255, 170, 170) 50%, rgb(255, 202, 127) 100%);
+}
+.musicPage input {
+  border-color: rgba(0, 0, 0, 0.19);
+}
+.musicPage .btn-search {
+  border-color: rgba(0, 0, 0, 0.19);
+  background: linear-gradient(90deg, rgb(216, 171, 246) 0%, rgb(255, 170, 170) 50%, rgb(255, 202, 127) 100%);
+}
+.musicPage .btn-search i:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */
