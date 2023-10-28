@@ -22,12 +22,10 @@ const updatePagination = (totalResults) => {
   let paginationHTML = "";
 
   if (totalPages <= 5) {
-    // If there are fewer than or equal to 5 pages, display page numbers for all pages.
     for (let page = 1; page <= totalPages; page++) {
       paginationHTML += `<li class="page-item ${page === currentPage ? 'active' : ''}"><a class="page-link" data-page="${page}" href="#">${page}</a></li>`;
     }
   } else {
-    // If there are more than 5 pages, display the first 4 pages, then an ellipsis, and the last page.
     if (currentPage <= 2) {
       for (let page = 1; page <= 4; page++) {
         paginationHTML += `<li class="page-item ${page === currentPage ? 'active' : ''}"><a class="page-link" data-page="${page}" href="#">${page}</a></li>`;
@@ -52,8 +50,6 @@ const updatePagination = (totalResults) => {
   }
 
   paginationElement.innerHTML = paginationHTML;
-
-  // Add event listeners for each page number
   const pageLinks = paginationElement.querySelectorAll(".page-link");
   pageLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
